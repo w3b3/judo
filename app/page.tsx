@@ -51,7 +51,6 @@ export default function Home() {
     }) ?? []);
     const filteredCategorySet = new Set();
     filteredCategory.forEach((technique) => {
-      console.log(technique.category)
       filteredCategorySet.add(technique.category);
     })
     // const categorySet = new Set()
