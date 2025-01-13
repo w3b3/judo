@@ -5,15 +5,15 @@ import { useState, useEffect } from 'react';
 import judoTechniquesData from './judo-techniques.json';
 
 const TechniqueCard: React.FC<{ technique: Technique }> = ({ technique }) => (
-  <div key={technique.name} className="card w-full bg-gray-700 p-4 rounded-md shadow-md ">
-    <h3 className="text-xl font-semibold mb-1 text-white break-words">{technique.name}</h3>
-    <p className="text-sm text-gray-400 mb-2">({technique.japaneseName} - {technique.description})</p>
-    <p className="text-xs mb-2">Key principles: {technique.keyPrinciples.join(', ')}</p>
+  <div key={technique.name} className="card w-full bg-white p-4 rounded-md shadow-md shadow-gray-300">
+    <h3 className="text-xl font-semibold mb-1 text-gray-800 break-words">{technique.name}</h3>
+    <p className="text-sm text-gray-600 mb-2">({technique.japaneseName} - {technique.description})</p>
+    <p className="text-xs text-gray-800 mb-2">Key principles: {technique.keyPrinciples.join(', ')}</p>
     {technique.referenceVideos.length > 0 && (
       <div className="mb-3">
         <ul className="list-decimal list-inside pl-4">
           {technique.referenceVideos.map((videoLink, index) => (
-            <li key={index} className="text-blue-400 hover:underline">
+            <li key={index} className="text-blue-600 hover:underline">
               <a href={videoLink} target="_blank" rel="noopener noreferrer">Watch a video <span> 🔗</span></a>
             </li>
           ))}
@@ -21,22 +21,15 @@ const TechniqueCard: React.FC<{ technique: Technique }> = ({ technique }) => (
       </div>
     )}
     {technique.referenceImages.length > 0 && (
-      <div>
-        {/* <h4 className="text-md font-medium text-gray-300 mb-1">Images:</h4> */}
-        
-          {technique.referenceImages?.map((imageLink, index) => (
-              
-                <img
-                key={imageLink}
-                  // src={"globe.svg"}
-                  src={imageLink}
-                  alt={technique.name}
-                  // width={150}
-                  className="rounded-md border border-gray-600"
-                />
-              
-          ))}
-        
+      <div className="w-full overflow-hidden">
+        {technique.referenceImages?.map((imageLink, index) => (
+          <img
+            key={imageLink}
+            src={imageLink}
+            alt={technique.name}
+            className="rounded-md w-full h-auto"
+          />
+        ))}
       </div>
     )}
   </div>
@@ -66,7 +59,7 @@ export default function Home() {
     }
 
     return (
-      <>{text.substring(0, index)}<mark className="bg-yellow-200 text-black">{text.substring(index, index + query.length)}</mark>{text.substring(index + query.length)}</>
+      <>{text.substring(0, index)}<mark className="bg-blue-200 text-black">{text.substring(index, index + query.length)}</mark>{text.substring(index + query.length)}</>
     );
   };
 
@@ -76,10 +69,10 @@ export default function Home() {
     const filteredCategory = judoTechniquesData.techniques.filter((technique) => {
       return technique.category.toLowerCase().includes(searchTerm);
     });
-    
+
     // Extract unique categories from the filtered results
     const filteredCategorySet = new Set(filteredCategory.map(technique => technique.category));
-    
+
     if (filteredCategorySet.size === 1) {
       // If there's only one result, set the selectedCategory
       setSelectedCategory(filteredCategorySet.values().next().value);
@@ -89,6 +82,8 @@ export default function Home() {
   }
   return (
     <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black text-white">
+      <h1 className="text-4xl font-bold mb-8 text-center">Judo Techniques</h1>
+
       <div className="card bg-gray-800 p-4 rounded-md mb-8">
         <input
           type="text"
