@@ -1,5 +1,6 @@
 {
   "firebase_hosting": {
     "deploymentHostingUrl": "https://judo-techniques-daniel.web.app"
-  }
+  },
+  "cloud_run_deploy": {}
 }
