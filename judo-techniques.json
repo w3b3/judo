@@ -1,1 +1,0 @@
-print(default_api.natural_language_write_file(language = "json", path = "judo-techniques.json", prompt = "Ensure all entries of judo techniques have the fields referenceVideos and referenceImages. If they don't exist, add an empty array for each."))
