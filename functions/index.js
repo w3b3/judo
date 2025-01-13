@@ -43,19 +43,25 @@ const db = admin.firestore();
 
 // initializeFirestore();
 
-exports.getAllTechniques = onRequest(async (request, response) => {
-  try {
-    const techniquesSnapshot = await db.collection("techniques").get();
-    const techniques = techniquesSnapshot.docs.map((doc) => {
-      return {
-        id: doc.id,
-        ...doc.data(),
-      };
-    });
-    response.status(200).json(techniques);
-  } catch (error) {
-    response.status(500).send(error.message);
-  }
+const cors = require("cors")({
+  origin: ["https://judo-techniques-daniel.web.app", "https://toldositajuba.com"],
+});
+
+exports.getAllTechniques = onRequest((request, response) => {
+  cors(request, response, async () => { // Wrap the function logic with cors
+    try {
+      const techniquesSnapshot = await db.collection("techniques").get();
+      const techniques = techniquesSnapshot.docs.map((doc) => {
+        return {
+          id: doc.id,
+          ...doc.data(),
+        };
+      });
+      response.status(200).json(techniques);
+    } catch (error) {
+      response.status(500).send(error.message);
+    }
+  });
 });
 
 const techniqueSchema = {
