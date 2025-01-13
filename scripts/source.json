@@ -1,0 +1,455 @@
+{
+  "techniques": [
+    {
+      "category": "Dai Ikkyo (第一教 - First Teaching)",
+      "name": "De Ashi Barai",
+      "japaneseName": "出足払",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Ikkyo (第一教 - First Teaching)",
+      "name": "Hiza Guruma",
+      "japaneseName": "膝車",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Ikkyo (第一教 - First Teaching)",
+      "name": "Sasae Tsuri Komi Ashi",
+      "japaneseName": "支釣込足",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Ikkyo (第一教 - First Teaching)",
+      "name": "Uki Goshi",
+      "japaneseName": "浮腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Ikkyo (第一教 - First Teaching)",
+      "name": "O Soto Gari",
+      "japaneseName": "大外刈",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Nikyo (第二教 - Second Teaching)",
+      "name": "Ko Soto Gari",
+      "japaneseName": "小外刈",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Nikyo (第二教 - Second Teaching)",
+      "name": "Ko Uchi Gari",
+      "japaneseName": "小内刈",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Nikyo (第二教 - Second Teaching)",
+      "name": "Seoi Nage",
+      "japaneseName": "背負投",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Nikyo (第二教 - Second Teaching)",
+      "name": "Kata Guruma",
+      "japaneseName": "肩車",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Nikyo (第二教 - Second Teaching)",
+      "name": "O Goshi",
+      "japaneseName": "大腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Sankyo (第三教 - Third Teaching)",
+      "name": "O Soto Otoshi",
+      "japaneseName": "大外落",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Sankyo (第三教 - Third Teaching)",
+      "name": "Tani Otoshi",
+      "japaneseName": "谷落",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Sankyo (第三教 - Third Teaching)",
+      "name": "Harai Goshi",
+      "japaneseName": "払腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Sankyo (第三教 - Third Teaching)",
+      "name": "Uchi Mata",
+      "japaneseName": "内股",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Sankyo (第三教 - Third Teaching)",
+      "name": "Koshi Guruma",
+      "japaneseName": "腰車",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Dai Yonkyo (第四教 - Fourth Teaching)",
+      "name": "Tomoe Nage",
+      "japaneseName": "巴投",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Ura Nage",
+      "japaneseName": "裏投",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Sumi Gaeshi",
+      "japaneseName": "隅返",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Yoko Gake",
+      "japaneseName": "横掛",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Yoko Guruma",
+      "japaneseName": "横車",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Uki Waza",
+      "japaneseName": "浮技",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Yoko Wakare",
+      "japaneseName": "横分",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Yama Arashi",
+      "japaneseName": "山嵐",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Obi Otoshi",
+      "japaneseName": "帯落",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Gokyo no Waza",
+      "name": "Kawazu Gake",
+      "japaneseName": "河津掛",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Habukareta Waza",
+      "name": "Morote Gari",
+      "japaneseName": "双手刈",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Habukareta Waza",
+      "name": "Kuchiki Taoshi",
+      "japaneseName": "朽木倒",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Habukareta Waza",
+      "name": "Kani Basami",
+      "japaneseName": "蟹挟",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Te Waza",
+      "name": "Ippon Seoi Nage",
+      "japaneseName": "一本背負投",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Te Waza",
+      "name": "Tai Otoshi",
+      "japaneseName": "体落",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Te Waza",
+      "name": "Kata Ashi Dori",
+      "japaneseName": "片足取",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Te Waza",
+      "name": "Sukui Nage",
+      "japaneseName": "掬投",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Te Waza",
+      "name": "Uki Otoshi",
+      "japaneseName": "浮落",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Koshi Waza",
+      "name": "Tsuri Komi Goshi",
+      "japaneseName": "釣込腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Koshi Waza",
+      "name": "Hane Goshi",
+      "japaneseName": "跳腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Koshi Waza",
+      "name": "Utsuri Goshi",
+      "japaneseName": "移腰",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Ashi Waza",
+      "name": "O Uchi Gari",
+      "japaneseName": "大内刈",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Ashi Waza",
+      "name": "Ko Soto Gake",
+      "japaneseName": "小外掛",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Ashi Waza",
+      "name": "Okuri Ashi Barai",
+      "japaneseName": "送足払",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Ashi Waza",
+      "name": "Ashi Guruma",
+      "japaneseName": "足車",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    },
+    {
+      "category": "Ashi Waza",
+      "name": "Harai Tsuri Komi Ashi",
+      "japaneseName": "払釣込足",
+      "referenceVideos": [
+        "https://www.youtube.com/watch?v=v_IqDCbWn6A"
+      ],
+      "referenceImages": [
+        "https://via.placeholder.com/150"
+      ]
+    }
+  ]
+}
