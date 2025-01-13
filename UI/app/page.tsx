@@ -1,9 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import {Technique} from './interfaces';
-// Import the JSON data
-import judoTechniquesData from './judo-techniques.json';
+import { Technique } from './interfaces';
 
 const TechniqueCard: React.FC<{ technique: Technique }> = ({ technique }) => (
   <div key={technique.name} className="card w-full bg-white p-4 rounded-md shadow-md shadow-gray-300">
@@ -42,14 +40,19 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredTechniques, setFilteredTechniques] = useState<Technique[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
 
   useEffect(() => {
-    // Set initial filtered techniques to the full list when the component mounts
-    setFilteredTechniques(judoTechniquesData.techniques);
+    // Fetch data from the API
+    fetch('https://us-central1-judo-techniques-daniel.cloudfunctions.net/getAllTechniques')
+      .then(response => response.json())
+      .then((data: Technique[])  => {
+        setFilteredTechniques(data);
+        // Extract unique categories from the fetched data
+        setCategories(Array.from(new Set(data.map((technique: Technique) => technique.category))));
+      })
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
-
-  // Extract unique categories from the JSON data
-  const categories = Array.from(new Set(judoTechniquesData.techniques.map((technique) => technique.category)));
 
   const highlightMatchingText = (text: string, query: string) => {
     if (!query) {
@@ -69,7 +72,7 @@ export default function Home() {
   const typeSearch = (e: { target: { value: string; }; }) => {
     const searchTerm = e.target.value.toLowerCase();
     setSearchQuery(searchTerm);
-    const filteredCategory = judoTechniquesData.techniques.filter((technique) => {
+    const filteredCategory = filteredTechniques.filter((technique) => {
       return technique.category.toLowerCase().includes(searchTerm);
     });
 
