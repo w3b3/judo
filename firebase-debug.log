@@ -1,0 +1,72 @@
+[debug] [2025-01-13T01:11:24.796Z] ----------------------------------------------------------------------
+[debug] [2025-01-13T01:11:24.799Z] Command:       /nix/store/if6aqyl3sl0hz14a12mndj35swb1mcwi-nodejs-20.17.0/bin/node /nix/store/p77y0rxv5lls1z0flirdcf720c9px72k-firebase-tools-13.29.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-01-13T01:11:24.800Z] CLI Version:   13.29.0
+[debug] [2025-01-13T01:11:24.800Z] Platform:      linux
+[debug] [2025-01-13T01:11:24.800Z] Node Version:  v20.17.0
+[debug] [2025-01-13T01:11:24.800Z] Time:          Mon Jan 13 2025 01:11:24 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-01-13T01:11:24.800Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-13T01:11:24.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-13T01:11:24.918Z] > authorizing via signed-in user (daniel.riodejaneiro.br@gmail.com)
+[debug] [2025-01-13T01:11:24.918Z] [iam] checking project judo-techniques-daniel for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-13T01:11:24.920Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:24.921Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:24.922Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/judo-techniques-daniel:testIamPermissions [none]
+[debug] [2025-01-13T01:11:24.922Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/judo-techniques-daniel:testIamPermissions x-goog-quota-user=projects/judo-techniques-daniel
+[debug] [2025-01-13T01:11:24.922Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/judo-techniques-daniel:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-13T01:11:25.193Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/judo-techniques-daniel:testIamPermissions 200
+[debug] [2025-01-13T01:11:25.193Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/judo-techniques-daniel:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-13T01:11:25.207Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:25.207Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:25.207Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/judo-techniques-daniel [none]
+[debug] [2025-01-13T01:11:25.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/judo-techniques-daniel 200
+[debug] [2025-01-13T01:11:25.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/judo-techniques-daniel {"projectId":"judo-techniques-daniel","projectNumber":"288552867056","displayName":"judo-techniques-daniel","name":"projects/judo-techniques-daniel","resources":{"hostingSite":"judo-techniques-daniel"},"state":"ACTIVE","etag":"1_333565bc-a829-47a9-bb5b-450ed214cb3a"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-01-13T01:11:34.860Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:34.861Z] Checked if tokens are valid: true, expires at: 1736734089279
+[debug] [2025-01-13T01:11:34.862Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/judo-techniques-daniel/sites/judo-techniques-daniel [none]
+[debug] [2025-01-13T01:11:35.632Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/judo-techniques-daniel/sites/judo-techniques-daniel 200
+[debug] [2025-01-13T01:11:35.633Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/judo-techniques-daniel/sites/judo-techniques-daniel {"name":"projects/judo-techniques-daniel/sites/judo-techniques-daniel","defaultUrl":"https://judo-techniques-daniel.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.1.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+./app/page.tsx:45:27
+Type error: Argument of type '({ id: string; category: string; name: string; japaneseName: string; referenceVideos: string[]; referenceImages: string[]; description: string; keyPrinciples: string[]; commonMistakes: string[]; variations: string[]; level: string; history: { ...; }; applications: { ...; }; } | { ...; } | { ...; })[]' is not assignable to parameter of type 'SetStateAction<Technique[]>'.
+  Type '({ id: string; category: string; name: string; japaneseName: string; referenceVideos: string[]; referenceImages: string[]; description: string; keyPrinciples: string[]; commonMistakes: string[]; variations: string[]; level: string; history: { ...; }; applications: { ...; }; } | { ...; } | { ...; })[]' is not assignable to type 'Technique[]'.
+    Type '{ id: string; category: string; name: string; japaneseName: string; referenceVideos: string[]; referenceImages: string[]; description: string; keyPrinciples: string[]; commonMistakes: string[]; variations: string[]; level: string; history: { ...; }; applications: { ...; }; } | { ...; } | { ...; }' is not assignable to type 'Technique'.
+      Type '{ id: string; category: string; name: string; japaneseName: string; referenceVideos: string[]; referenceImages: string[]; description: string; keyPrinciples: string[]; commonMistakes: string[]; variations: string[]; level: string; applications: { ...; }; history?: undefined; }' is not assignable to type 'Technique'.
+        Types of property 'history' are incompatible.
+          Type 'undefined' is not assignable to type '{ origin: string; importantFigures: string[]; }'.
+
+  43 |   useEffect(() => {
+  44 |     // Set initial filtered techniques to the full list when the component mounts
+> 45 |     setFilteredTechniques(judoTechniquesData.techniques);
+     |                           ^
+  46 |   }, []);
+  47 |
+  48 |   // Extract unique categories from the JSON data
+
+[info] Static worker exited with code: 1 and signal: null
+
+[debug] [2025-01-13T01:12:12.433Z] Error: ENOENT: no such file or directory, open '/home/user/judo/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
+import {Technique} from './interfaces';
 // Import the JSON data
 import judoTechniquesData from './judo-techniques.json';
 
@@ -12,9 +13,9 @@ const TechniqueCard: React.FC<{ technique: Technique }> = ({ technique }) => (
     {technique.referenceVideos.length > 0 && (
       <div className="mb-3">
         <ul className="list-decimal list-inside pl-4">
-          {technique.referenceVideos.map((videoLink, index) => (
+          {technique.referenceVideos.map((videoLink, index) => ( 
             <li key={index} className="text-blue-600 hover:underline">
-              <a href={videoLink} target="_blank" rel="noopener noreferrer">Watch a video <span> 🔗</span></a>
+              <a href={videoLink} target="_blank" rel="noopener noreferrer">Watch a video <span> &#128279;</span></a>
             </li>
           ))}
         </ul>
@@ -22,12 +23,14 @@ const TechniqueCard: React.FC<{ technique: Technique }> = ({ technique }) => (
     )}
     {technique.referenceImages.length > 0 && (
       <div className="w-full overflow-hidden">
-        {technique.referenceImages?.map((imageLink, index) => (
-          <img
+        {technique.referenceImages?.map((imageLink) => (
+          <Image
             key={imageLink}
             src={imageLink}
             alt={technique.name}
             className="rounded-md w-full h-auto"
+            width={300}
+            height={200}
           />
         ))}
       </div>
@@ -75,7 +78,7 @@ export default function Home() {
 
     if (filteredCategorySet.size === 1) {
       // If there's only one result, set the selectedCategory
-      setSelectedCategory(filteredCategorySet.values().next().value);
+      setSelectedCategory(filteredCategorySet.values().next().value || null);
     } else {
       setSelectedCategory(null);
     }
@@ -92,7 +95,6 @@ export default function Home() {
           value={searchQuery}
           onChange={typeSearch}
         />
-        {/* <hr className="mb-6" /> */}
 
         <div className="flex flex-wrap justify-center gap-1">
           {categories.map((category) => (
@@ -104,7 +106,6 @@ export default function Home() {
             >
               <span className={`relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md ${selectedCategory === category || selectedCategory === null ? 'bg-opacity-100' : 'bg-opacity-10 blur-sm'
                 }`}>
-                {/* {category} */}
                 {highlightMatchingText(category, searchQuery)}</span>
             </button>
           ))}
@@ -117,7 +118,6 @@ export default function Home() {
           .map((technique) => (
             <TechniqueCard key={technique.name} technique={technique} />
           ))}
-        {/* {!filteredTechniques.filter((technique) => !selectedCategory || technique.category === selectedCategory).length && <p>No matching techniques found.</p>} */}
       </div>
       <hr className='mb-8 mt-8' />
       <p className="text-center text-xs text-gray-400 mb-4">It's important to understand that the Kodokan syllabus is extensive and has evolved over time. There isn't one definitive, universally agreed-upon "list" with a fixed number of techniques. However, I can provide you with a comprehensive overview of the main categories and techniques generally recognized within the Kodokan Judo system, based on the Gokyo no Waza and other recognized techniques.</p>
